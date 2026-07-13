@@ -10,7 +10,7 @@ General informations about my homelab/home server.
 
 | Component | Product                   |
 | --------- | ------------------------- |
-| OS        | Promox                    |
+| OS        | Proxmox                   |
 | CPU       | Intel® Core™ i5-12600K    |
 | MOBO      | GIGABYTE B760 Gaming X AX |
 | RAM       | 32GB DDR5 6000MHz CL30    |
