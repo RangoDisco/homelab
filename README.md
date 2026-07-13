@@ -19,4 +19,6 @@ General informations about my homelab/home server.
 
 ## Architecture
 
-<img src="homelab_v1-draft.png" alt="network diagram" />
+<img src="network_diagram_v2-draft.png" alt="network diagram" />
+
+_A gross oversimplification of the architecture_
