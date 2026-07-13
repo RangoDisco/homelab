@@ -3,7 +3,7 @@
 [Glance](https://github.com/glanceapp/glance) is self-hosted dashboard. I use it as my firefox home page.
 
 > [!NOTE]
-> I had a yml kink for some reason when I setup Glance so all of the file use the .yml extension instead of .yaml
+> I had a yml kink for some reason when I setup Glance. All of the files use the .yml extension instead of .yaml
 
 - [Main file](glance_data/glance.yml) containing 2 pages:
   - Home with basic widgets like calendar RSS feed. There is also 2 custom widgets
