@@ -4,7 +4,8 @@ General informations about my homelab/home server.
 
 ## Table of contents
 
-- [Apps](apps). List of the apps on my server.
+- [Apps](apps) - List of the apps on my server
+- [Backup](backup.md) - Backup strategy/setup
 
 ## Hardware
 
