@@ -1,3 +1,4 @@
 # Apps
 
-- [Glance](glance), selfhosted dashboard
+- [Glance](glance) - Dashboard
+- [Navidrome](navidrome) - Music streaming service
