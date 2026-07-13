@@ -1,0 +1,92 @@
+pages:
+  - name: Home
+    # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+    # hide-desktop-navigation: true
+    columns:
+      - size: small
+        widgets:
+          - type: calendar
+            first-day-of-week: monday
+
+          - type: rss
+            limit: 10
+            collapse-after: 3
+            cache: 12h
+            feeds:
+              - url: https://hltv.org/news.rss.php
+                title: HLTV
+                limit: 4
+              - url: https://selfh.st/rss/
+                title: selfh.st
+                limit: 4
+              - url: https://feeds.feedburner.com/symfony/blog
+                title: Symfony
+                limit: 2
+
+          - type: twitch-channels
+            channels:
+              - nothingxnowhere
+              - grafikart
+
+      - size: full
+        widgets:
+          - $include: npm.yml
+            #- type: group
+            #widgets:
+            #  - type: hacker-news
+
+          - type: videos
+            channels:
+              - UC9zY_E8mcAo_Oq772LEZq8Q # THE FIRST TAKE
+              - UCeTfBygNb1TahcNpZyELO8g # Jacob Geller
+              - UCBEWNR_x89cYolTNhuV7-Fw # nothing,nowhere.
+              - UCQVaKQcp4OxSg1eC6SF3NTw # Feldup
+
+          - type: group
+            widgets:
+              - type: reddit
+                subreddit: GlobalOffensive
+                show-thumbnails: true
+              - type: reddit
+                subreddit: selfhosted
+                show-thumbnails: true
+              - type: reddit
+                subreddit: DarkGothicArt
+                show-thumbnails: true
+
+      - size: small
+        widgets:
+          - $include: steam-top-sellers.yml
+
+          - type: markets
+            markets:
+              - symbol: SPY
+                name: S&P 500
+              - symbol: BTC-EUR
+                name: Bitcoin
+
+          - type: releases
+            cache: 1d
+            # Without authentication the Github API allows for up to 60 requests per hour. You can create a
+            # read-only token from your Github account settings and use it here to increase the limit.
+            # token: ...
+            repositories:
+              - immich-app/immich
+              - navidrome/navidrome
+              - rangodisco/zelvy
+  # Add more pages here:
+  - name: Sport
+    columns:
+      - size: small
+        widgets:
+          - $include: nhl.yml
+      - size: full
+        widgets:
+          - $include: nfl.yml
+      - size: small
+        widgets:
+          - $include: mlb.yml
+          - $include: nba.yml
+  #     - size: small
+  #       widgets:
+  #         # Add widgets here
