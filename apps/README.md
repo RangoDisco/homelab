@@ -5,3 +5,4 @@
 - [Immich](immich) - Photo and video management
 - [Penpot](penpot) - Design platform
 - [Yhar](yhar) - Scrobbler + scrobble database
+- [Obsidian](obsidian) - Note taking app / second brain
